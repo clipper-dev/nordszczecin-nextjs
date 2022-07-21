@@ -1,0 +1,173 @@
+.navbar {
+	height: 50px;
+	width: auto;
+	background-color: var(--primaryBackground);
+	box-shadow: -1px 0px 5px #00000030;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+}
+
+.navbar-main-logo {
+	cursor: normal;
+	height: 20px;
+
+}
+
+.title-container {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+
+}
+.app-title {
+	cursor: pointer;
+	font-size: 1.5rem;
+	margin: 1rem;
+	font-family: 'Dosis', sans-serif;
+	border-bottom: solid 2px transparent;
+	transition: all 0.1s ease-in-out;
+}
+.app-title:hover{
+	border-bottom: solid 2px var(--primaryHighlight);
+}
+
+.menu-icon {
+	margin: 1rem;
+}
+
+.navBar-menu {
+	height: 50px;
+	width: fit-content;
+	display: flex;
+	padding: 0;
+	justify-content: center;
+}
+
+.navBar-menu-items {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	list-style: none;
+}
+
+
+
+/*SIDE BAR*/
+/*main container of the side bar*/
+.sideBar-menu {
+	background-color: var(--contrastBackground);
+	height: 100vh;
+	width: 20vw;
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	z-index: 8;
+}
+.sideBar-menu-item{
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5rem;
+}
+.sideBar-menu-item-text{
+	color: var(--fontMainContast);
+	font-size: 1rem;
+}
+.sideBar-active {
+	right: 0;
+	transition: 200ms;
+	box-shadow: -1px 0px 5px #00000030;
+}
+.sideBar-hidden {
+	right: -100%;
+	transition: 400ms;
+}
+.sideBar-menu-items {
+	padding: 0;
+}
+
+
+.nav-text {
+	display: flex;
+	justify-content: left;
+	padding: 1rem;
+	list-style: none;
+}
+
+.nav-text a {
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+}
+
+
+.nav-text-top{
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 2rem;
+}
+
+.navBar-menu-item-title {
+	border-bottom: solid 2px transparent;
+	transition: all 0.1s ease-in-out;
+
+}
+
+.navBar-menu-item-title:hover{
+	border-bottom: solid 2px var(--primaryHighlight);
+
+}
+
+.nav-text-top:hover .icon--nav {
+	fill: var(--iconChosen);
+}
+
+/*Media querries*/
+
+/*For tablets*/
+@media only screen and (max-width: 900px) {
+	.sideBar-menu {
+		background-color: var(--contrastBackground);
+		height: 100vh;
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		z-index: 8;
+	}
+	.sideBar-menu-item{
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 1rem;
+	}
+	.sideBar-menu-item-text{
+		color: var(--fontMainContast);
+		font-size: 1.5rem;
+	}
+	.sideBar-active {
+		right: 0;
+		transition: 200ms;
+		box-shadow: -1px 0px 5px #00000030;
+	}
+	.sideBar-hidden {
+		right: -100%;
+		transition: 400ms;
+	}
+	.sideBar-menu-items {
+		padding: 0;
+	}
+}
+/*For mobiles*/
+@media only screen and (max-width: 600px) {
+	
+}
