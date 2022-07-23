@@ -1,10 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { NavbarSinglePage } from '../components/Navbar'
 import Footer from '../components/Footer'
-import { useEffect, useRef, useState } from 'react';
-import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -21,16 +18,15 @@ export default function Home() {
 
       {/*Main content*/}
       <div className={[styles['main-container'], ['content-container']].join(' ')}>
+
         {/*Title image*/}
-        <div id='home' className={styles['article-image-container']}>
-          <Image
-            className={styles["custom-img"]}
-            src={"/res/1.jpg"}
-            layout='fill'
-            alt=""
-            objectFit='cover'
-          />
+        {/*Hero section*/}
+        <div id='home' className={styles['hero-section']}>
+          <div className={styles['hero-section-text']} >Kuchnie na wymiar</div>
+          <div className={styles['hero-section-text-animated']} >Nowoczesne i stylistyczne rozwiązania</div>
         </div>
+
+
         {/*Head of the page with main text and call to action*/}
 
         <div id='oferta' className={styles['section']}>
