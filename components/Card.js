@@ -6,7 +6,9 @@ const STYLES = ['card--primary', 'card--outline'];
 const SIZES = ['card--default', 'card--wide'];
 
 const COLORS = ['card--primary--color', 'card--gradient--purple', 'card--gradient--red'];
+
 function Card({
+	imageSrc,
 	children,
 	cardStyle,
 	cardSize,

@@ -18,6 +18,14 @@ function Footer() {
                     <span className={styles['footer-content']}>71-660 Szczecin</span>
                     <span className={styles['footer-content']}>NIP 955-25-40-182</span>
                 </div>
+                <div className={styles['footer-column']}>
+                    <div className={styles['footer-header']}>Wykonujemy na wymiar</div>
+                    <span className={styles['footer-content']}>- Meble kuchenne,</span>
+                    <span className={styles['footer-content']}>- Szafy wnękowe,</span>
+                    <span className={styles['footer-content']}>- Garderoby,</span>
+                    <span className={styles['footer-content']}>- Meble do sypialni,</span>
+                    <span className={styles['footer-content']}>- Meble łazienkowe.</span>
+                </div>
 
                 <div className={styles['footer-column']}>
 

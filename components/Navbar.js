@@ -116,8 +116,8 @@ function NavbarSinglePage() {
 					{SideBarData.map((item, index) => {
 						return (
 							<li key={index} className={styles['sideBar-menu-item']}>
-								<Link href={item.path} onClick={() => { setSideBar(false) }} passHref >
-									<span className={[styles['sideBar-menu-item-text'], ['p--display']].join(" ")}>{item.title}</span>
+								<Link href={'#'+item.path} onClick={() => {setSideBar(!sideBar)}} passHref >
+									<span onClick={() => {setSideBar(!sideBar)}} className={[styles['sideBar-menu-item-text'], ['p--display']].join(" ")} >{item.title}</span>
 								</Link>
 							</li>
 						)
