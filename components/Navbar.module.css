@@ -1,7 +1,7 @@
 .navbar {
 	height: 50px;
 	width: auto;
-	background-color: var(--primaryBackground);
+	background-color: var(--contrastBackground);
 	box-shadow: -1px 0px 5px #00000030;
 	display: flex;
 	justify-content: space-between;
@@ -26,16 +26,19 @@
 .app-title {
 	cursor: pointer;
 	font-size: 1.5rem;
-	margin: 1rem;
-	font-family: 'Dosis', sans-serif;
+	margin: 0.2rem;
+	font-weight: 600;
 	border-bottom: solid 2px transparent;
 	transition: all 0.1s ease-in-out;
+	color: var(--fontContrast);
 }
+
 .app-title:hover{
 	border-bottom: solid 2px var(--primaryHighlight);
 }
 
 .menu-icon {
+	color: var(--fontContrast);
 	margin: 1rem;
 }
 
@@ -60,7 +63,7 @@
 /*SIDE BAR*/
 /*main container of the side bar*/
 .sideBar-menu {
-	background-color: var(--contrastBackground);
+	background-color: var(--fontMainContast);
 	height: 100vh;
 	width: 20vw;
 	display: flex;
@@ -115,6 +118,7 @@
 }
 
 .navBar-menu-item-title {
+	color: var(--fontContrast);
 	border-bottom: solid 2px transparent;
 	transition: all 0.1s ease-in-out;
 

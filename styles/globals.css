@@ -2,7 +2,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #fff;
+	background-color: var(--contrastBackgroundMain);
 	scroll-behavior: smooth;
 }
 
@@ -11,7 +11,9 @@ body {
 	flex-direction: column;
 }
 
-
+.accent{
+	color: var(--primaryHighlight);
+}
 
 
 * {
@@ -131,8 +133,8 @@ li>a:hover {
 
 
 :root {
-	--primaryHighlight: #0F4C75;
-	--alternateHighlight: #ed6292;
+	--primaryHighlight: #3CCF4E;
+	--alternateHighlight: #5A8F7B;
 	--primaryAccent: #1B262C;
 
 	/*Fonts*/
@@ -142,11 +144,13 @@ li>a:hover {
 
 	--fontAlternateText: #BBE1FA;
 	--fontMainContast: #f9f9f9;
+	--fontContrast: #E7F6F2;
 
 	/*Backgrounds*/
 	--primaryBackground: #f9f9f9;
 	--secondaryBackground: rgb(250, 250, 250);
-	--contrastBackground: #1B262C;
+	--contrastBackground: #101010;
+	--contrastBackgroundMain: #202020;
 
 	/*Forms*/
 	/*---*/
@@ -161,6 +165,7 @@ li>a:hover {
 	--primaryDivider: rgb(225, 225, 225);
 
 
+	
 }
 
 .content-container {

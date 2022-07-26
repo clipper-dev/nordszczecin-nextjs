@@ -6,7 +6,7 @@
     width: 100%;
     height: fit-content;
     min-height: 200px;
-    background-color: var(--primaryAccent);
+    background-color: var(--contrastBackground);
 }
 
 .footer-container {
@@ -59,7 +59,7 @@
     max-width: 50ch;
     line-height: 1.5;
     padding: 0.5rem;
-    color: var(--fontAlternateText);
+    color: var(--alternateHighlight);
 }
 
 .footer-link {
@@ -77,4 +77,25 @@
 
 .footer-link:hover .footer-link-item {
     border-bottom: solid 2px var(--fontMainContast);
+}
+
+@media only screen and (max-width: 900px) {
+    .main-footer-container {
+    }    
+    .footer-container {    
+    }    
+    .footer-column {
+        width: 100%;
+        margin: 0.5rem;
+    }
+    .footer-header {
+        font-size: 1.2rem;
+    
+    }
+    .footer-content {
+        font-size: 1rem;
+        line-height: 1.2;
+        padding: 0.5rem;
+        color: var(--alternateHighlight);
+    }
 }

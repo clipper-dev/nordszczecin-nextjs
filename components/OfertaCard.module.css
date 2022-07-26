@@ -1,3 +1,24 @@
+.row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-container {
+    padding: 2rem;
+    width: fit-content;
+    height: 100%;
+    color: white;
+
+}
+
+.outer-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
@@ -6,7 +27,7 @@
     width: 800px;
     height: 500px;
     padding: 2rem;
-    border: solid 5px white;
+    border: solid 5px var(--contrastBackgroundMain);
 
     /*background*/
 
@@ -15,79 +36,88 @@
 }
 
 .main-container:hover {
-    border: solid 5px var(--primaryAccent);
+    border: solid 5px var(--primaryHighlight);
     transition: border 0.2s ease-in-out;
 }
 
 .label {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 800;
     color: var(--primaryBackground);
     text-shadow: 2px 2px 4px #000000, -2px -2px 4px #000030;
 }
 
 .kuchnia-nowoczesna {
-    background-image: url("../public/res/kitchen-modern.jpg");
+    background-image: url("../public/res/kitchen2.jpg");
     background-size: cover;
-    background-position: 0 -200px;
+    background-position: 0 -00px;
 }
+
 .kuchnia-tradycyjna {
     background-image: url("../public/res/kitchen-traditional.jpg");
     background-size: cover;
     background-position: 0 -200px;
 }
+
 .szafy-garderoby {
     background-image: url("../public/res/wardrobe.jpg");
     background-size: cover;
     background-position: 0 -200px;
 }
+
 .lazienki {
     background-image: url("../public/res/lazienka.jpg");
     background-size: cover;
 }
+
 .zabudowy {
-    background-image: url("../public/res/zabudowy.jpg");
+    background-image: url("../public/res/office.jpg");
     background-size: cover;
 }
 
 @media only screen and (max-width: 900px) {
     .main-container {
-       
-        width: 300px;
-        height: 200px;
-    
-        padding: 0.5rem;
-    
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 150px;
+        border: none;
+
+        padding: 0rem;
+        margin: 0rem;
+
         /*background*/
-    
+
         /*border*/
-    
+
     }
+
     .label {
         font-size: 1.5rem;
     }
 
     .kuchnia-nowoczesna {
-        background-image: url("../public/res/kitchen-modern.jpg");
         background-size: cover;
         background-position: 0 -50px;
     }
+
     .kuchnia-tradycyjna {
-        background-image: url("../public/res/kitchen-traditional.jpg");
         background-size: cover;
-        background-position: 0 -100px;
+        background-position: 0 -00px;
     }
+
     .szafy-garderoby {
-        background-image: url("../public/res/wardrobe.jpg");
         background-size: cover;
-        background-position: 0 -100px;
+        background-position: 0 -200px;
     }
+    
     .lazienki {
-        background-image: url("../public/res/lazienka.jpg");
         background-size: cover;
     }
+    
     .zabudowy {
-        background-image: url("../public/res/zabudowy.jpg");
         background-size: cover;
+        background-position: 0 -50px;
     }
 }

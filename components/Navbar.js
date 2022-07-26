@@ -22,7 +22,16 @@ function Navbar() {
 					{/*Left section of the navbar, responsible for the logo or company name*/}
 					<Link href={'/'} onClick={() => { setSideBar(false) }} passHref >
 						{/*Changes depending on the width of the screen*/}
-						{size.width > 600 ? <span className={styles['app-title']}>Nord Szczecin - Kuchnie na wymiar</span> : <span className={styles['app-title']}>Nord</span>}
+						{size.width > 600 ?
+							<div className={styles['app-title']}>
+								<span className={[['accent']].join(" ")}>NORD </span>
+								<span>SZCZECIN</span>
+							</div>
+							: 
+							<div className={styles['app-title']}>
+								<span className={[['accent']].join(" ")}>NORD </span>
+								<span>SZCZECIN</span>
+							</div>}
 					</Link>
 				</div>
 				{size.width > 600 ?
@@ -116,8 +125,8 @@ function NavbarSinglePage() {
 					{SideBarData.map((item, index) => {
 						return (
 							<li key={index} className={styles['sideBar-menu-item']}>
-								<Link href={'#'+item.path} onClick={() => {setSideBar(!sideBar)}} passHref >
-									<span onClick={() => {setSideBar(!sideBar)}} className={[styles['sideBar-menu-item-text'], ['p--display']].join(" ")} >{item.title}</span>
+								<Link href={'#' + item.path} onClick={() => { setSideBar(!sideBar) }} passHref >
+									<span onClick={() => { setSideBar(!sideBar) }} className={[styles['sideBar-menu-item-text'], ['p--display']].join(" ")} >{item.title}</span>
 								</Link>
 							</li>
 						)

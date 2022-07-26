@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { NavbarSinglePage } from '../components/Navbar'
+import { Navbar } from '../components/Navbar'
 import Footer from '../components/Footer'
-import Oferta from '../components/Oferta'
+import OfertaCard from '../components/OfertaCard'
 import { FaPhone } from 'react-icons/fa'
 
 export default function Home() {
@@ -20,55 +20,24 @@ export default function Home() {
 
       {/*Header wiht navbar*/}
 
-      <NavbarSinglePage />
+      <Navbar />
 
       {/*Main content*/}
       <div className={[styles['main-container'], ['content-container']].join(' ')}>
 
         {/*Title image*/}
         {/*Hero section*/}
-        <div id='home' className={styles['hero-section']}>
+        <div id='home' className={[styles['hero-section'],styles['img1']].join(" ")}>
           <div className={styles['hero-section-text']} >Kuchnie na wymiar</div>
           <div id='animated-text' className={styles['hero-section-text-animated']}>
             <span>Nowoczesne i stylistyczne rozwiązania</span>
-            <div className={styles['hero-phone-container']}>
-            <FaPhone />
-            <div className={styles['hero-phone-number']}>888 333 891</div>
-          </div>
           </div>
         </div>
 
 
         {/*Head of the page with main text and call to action*/}
 
-        <div id='oferta' className={styles['section']}>
-          <h1>Oferta</h1>
-          <h2>W naszej ofercie znajdują się:</h2>
-          <div className={styles['oferta']}>
-            <Oferta label='Kuchnie nowoczesne' src='kuchnia-nowoczesna'></Oferta>
-            <Oferta label='Kuchnie tradycyjne' src='kuchnia-tradycyjna'></Oferta>
-            <Oferta label='Szafy i garderoby' src='szafy-garderoby'></Oferta>
-            <Oferta label='Łazienki' src='lazienki'></Oferta>
-            <Oferta label='Zabudowy' src='zabudowy'></Oferta>
-
-          </div>
-
-        </div>
-        <div id='o-nas' className={styles['section']}>
-          <h1>O nas</h1>
-          <div className={styles['description']}>Meble kuchenne Nord Szczecin to połączenie indywidualnego podejścia, profesjonalnego wykonania i projektu szytego na miarę potrzeb każdego klienta. </div>
-          <div className={styles['description']}>Przeszło 15 lat doświaczenia pozwala nam na zwracanie uwagi na detale i zoptymalizowanie funkcjonalności tego pomieszczenia, dopasowaną do potrzeb wszystkich domowników.</div>
-          <div className={styles['description']}>Specjalizujemy się w eleganckich i modernistycznych kuchniach nowoczesnych, ale na specjalne życzenie klienta tworzymy też drewniane kuchnie klasyczne.</div>
-        </div>
-        <div id='kontakt' className={styles['section']}>
-          <h1>Kontakt</h1>
-          <h2>Zapraszamy do umówienia się na bezpłatną wycenę i projekt.</h2>
-          <h2>Masz pytania? Skontaktuj się z nami</h2>
-          <div className={styles['phone-container']}>
-            <FaPhone />
-            <div className={styles['phone-number']}>888 333 891</div>
-          </div>
-        </div>
+        
       </div>
 
 
