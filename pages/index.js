@@ -31,6 +31,10 @@ export default function Home() {
           <div className={styles['hero-section-text']} >Kuchnie na wymiar</div>
           <div id='animated-text' className={styles['hero-section-text-animated']}>
             <span>Nowoczesne i stylistyczne rozwiązania</span>
+            <div className={styles['hero-phone-container']}>
+            <FaPhone />
+            <div className={styles['hero-phone-number']}>888 333 891</div>
+          </div>
           </div>
         </div>
 
@@ -39,7 +43,7 @@ export default function Home() {
 
         <div id='oferta' className={styles['section']}>
           <h1>Oferta</h1>
-          <h2>Do naszej oferty należy</h2>
+          <h2>W naszej ofercie znajdują się:</h2>
           <div className={styles['oferta']}>
             <Oferta label='Kuchnie nowoczesne' src='kuchnia-nowoczesna'></Oferta>
             <Oferta label='Kuchnie tradycyjne' src='kuchnia-tradycyjna'></Oferta>

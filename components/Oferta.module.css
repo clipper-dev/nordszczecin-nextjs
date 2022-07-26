@@ -22,8 +22,8 @@
 .label {
     font-size: 3rem;
     font-weight: 800;
-    color: #fff;
-    text-shadow: 2px 2px 4px #000000;
+    color: var(--primaryBackground);
+    text-shadow: 2px 2px 4px #000000, -2px -2px 4px #000030;
 }
 
 .kuchnia-nowoczesna {
