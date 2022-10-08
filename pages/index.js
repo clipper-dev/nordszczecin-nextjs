@@ -30,7 +30,7 @@ export default function Home() {
         <div id='home' className={[styles['hero-section'],styles['img1']].join(" ")}>
           <div className={styles['hero-section-text']} >Kuchnie na wymiar</div>
           <div id='animated-text' className={styles['hero-section-text-animated']}>
-            <span>Nowoczesne i stylistyczne rozwiązania</span>
+            <span>Nowoczesne i stylistyczne rozwiązania dla Ciebie</span>
           </div>
         </div>
 
