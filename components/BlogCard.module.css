@@ -1,19 +1,25 @@
 .mainContainer {
 	width: 80%;
 	height: fit-content;
-	background-color: #ffffff;
+	background-color: var(--contrastBackground);
+	color: var(--fontMainContast);
 	padding: 1rem;
 	display: flex;
 	flex-direction: row;
 	border-radius: 12px;
 	margin: 1rem 0;
-	box-shadow: 4px 4px 8px #ffffff55;
+	box-shadow: 4px 4px 8px var(--contrastBackground);
 	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+.mainContainer:hover {
+	scale: 1.02;
 }
 .text {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	max-width: 80ch;
 }
 
 .title {
@@ -38,4 +44,16 @@
 .imageBorder {
 	border-radius: 10px;
 
+}
+@media screen and (max-width: 768px) {
+	.mainContainer {
+		flex-direction: column-reverse;
+	}
+	.image {
+		width: 100%;
+		height: 200px;
+	}
+	.text {
+		margin: 1rem 0;
+	}
 }

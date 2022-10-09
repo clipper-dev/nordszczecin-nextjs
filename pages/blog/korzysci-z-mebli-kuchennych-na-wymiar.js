@@ -35,7 +35,7 @@ export default function Blog() {
           </div>
           {/* title of the post */}
           <div className={styles.textSection}>
-            <h1>Wiele korzyści z mebli kuchennych na wymiar</h1>
+            <h1 className={styles.header}>Wiele korzyści z mebli kuchennych na wymiar</h1>
             <p className={styles.subheader}>
               Meble kuchenne na zamówienie są zaprojektowane tak, aby pasowały
               do konkretnych potrzeb lub przestrzeni. Są wykonane na miarę, co

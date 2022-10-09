@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import OfertaCard from '../components/OfertaCard'
 import { FaPhone } from 'react-icons/fa'
 import { description, title } from '../data/main'
+import Image from 'next/image'
 
 export default function Oferta() {
 
@@ -33,10 +34,20 @@ export default function Oferta() {
 
         {/*Title image*/}
         {/*Hero section*/}
-        <div id='home' className={[styles['hero-section'],styles['img1']].join(" ")}>
-          <div className={styles['hero-section-text']} >Oferta</div>
-          <div id='animated-text' className={styles['hero-section-text-animated']}>
-            <span>NORD SZCZECIN</span>
+        <div id="home" className={[styles["hero-section"]].join(" ")}>
+          <div className={styles["hero-section-image"]}>
+            <Image src="/res/kitchen3.jpg" layout="fill" objectFit="cover" />
+          </div>
+          <div className={styles["hero-section-text"]}>
+            <div className={styles["hero-section-title"]}>
+            Skontaktuj się z nami
+            </div>
+            <div
+              id="animated-text"
+              className={styles["hero-section-text-animated"]}
+            >
+              <span>NORD Szczecin</span>
+            </div>
           </div>
         </div>
 

@@ -16,6 +16,7 @@ function BlogCard(props) {
             className={styles.imageBorder}
             src={props.post.image}
             layout="fill"
+            objectFit="cover"
           />
         </div>
       </div>

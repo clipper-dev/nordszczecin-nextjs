@@ -5,9 +5,9 @@ import Footer from "../components/Footer";
 import OfertaCard from "../components/OfertaCard";
 import { FaPhone } from "react-icons/fa";
 import { title, description } from "../data/main";
+import Image from "next/image";
 export default function Home() {
-  
-    return (
+  return (
     <>
       <Head>
         <title>{title}</title>
@@ -16,7 +16,7 @@ export default function Home() {
         <meta itemprop="name" content={title} />
         <meta itemprop="description" content={description} />
         <meta itemprop="image" content="/res/1.jpg" href="/res/1.jpg" />
-        <meta name="robots" content="index, follow"/>
+        <meta name="robots" content="index, follow" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -30,16 +30,20 @@ export default function Home() {
       >
         {/*Title image*/}
         {/*Hero section*/}
-        <div
-          id="home"
-          className={[styles["hero-section"], styles["img1"]].join(" ")}
-        >
-          <div className={styles["hero-section-text"]}>Kuchnie na wymiar</div>
-          <div
-            id="animated-text"
-            className={styles["hero-section-text-animated"]}
-          >
-            <span>Nowoczesne i stylistyczne rozwiązania dla Ciebie</span>
+        <div id="home" className={[styles["hero-section"]].join(" ")}>
+          <div className={styles["hero-section-image"]}>          
+            <Image src="/res/1.jpg" layout="fill" objectFit="cover"/>
+          </div>
+          <div className={styles["hero-section-text"]}>
+            <div className={styles["hero-section-title"]}>
+              Kuchnie na wymiar
+            </div>
+            <div
+              id="animated-text"
+              className={styles["hero-section-text-animated"]}
+            >
+              <span>Nowoczesne i stylistyczne rozwiązania dla Ciebie</span>
+            </div>
           </div>
         </div>
 

@@ -86,7 +86,9 @@
     z-index: 3;
     text-align: center;
 }
-
+.accent {
+    color: var(--primaryHighlight);
+}
 .kontakt-content {
     font-weight: 400;
     font-size: 2rem;
@@ -97,7 +99,16 @@
     max-width: 70ch;
     margin: 1.5rem 0.2rem;
 }
-
+.kontaktSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+}
 
 /*Phone section na dole strony*/
 .hero-phone-container {
@@ -174,5 +185,36 @@
         font-weight: 400;
         font-size: 1.8rem;
         color: var(--primaryHighlight);
+    }
+    .kontakt-title {
+        font-weight: 700;
+        font-size: 1.8rem;
+        padding: 1rem 0.2rem;
+        color: var(--primaryHighlight);
+        z-index: 3;
+        text-align: center;
+    }
+    .accent {
+        color: var(--primaryHighlight);
+    }
+    .kontakt-content {
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: var(--fontMainContast);
+        z-index: 3;
+        text-align: center;
+        max-width: 70ch;
+        margin: 1.5rem 0.2rem;
+    }
+    .kontaktSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0rem;
+        position: relative;
+        z-index: 1;
     }
 }

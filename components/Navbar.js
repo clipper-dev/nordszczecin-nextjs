@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Button } from './Button'
 import styles from './Navbar.module.css'
 import { NavBarData } from './NavBarData'
-import { SideBarData } from './SideBarData'
 import Link from 'next/link'
 import { FaBars } from 'react-icons/fa'
 import { useWindowSize } from '../utils/CustomHooks'
@@ -59,7 +58,7 @@ function Navbar() {
 			{/*Display side bar only if opened and only if on mobile*/}
 			{<div className={sideBar ? [styles['sideBar-menu'], styles['sideBar-active']].join(" ") : [styles['sideBar-menu'], styles['sideBar-hidden']].join(" ")}>
 				<ul className={styles['sideBar-menu-items']}>
-					{SideBarData.map((item, index) => {
+					{NavBarData.map((item, index) => {
 						return (
 							<li key={index} className={styles['sideBar-menu-item']}>
 								<Link href={item.path} onClick={() => { setSideBar(false) }} passHref >
