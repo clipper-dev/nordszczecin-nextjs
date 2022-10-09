@@ -33,6 +33,10 @@ h3 {
 	flex-direction: column;
 }
 
+p, li {
+	max-width: 80ch;
+}
+
 /*Table of contents*/
 a {
 	color: var(--fontText);

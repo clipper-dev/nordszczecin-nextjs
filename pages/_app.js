@@ -1,9 +1,21 @@
 import "../styles/globals.css";
 import Script from "next/script";
+import Head from "next/head";
+import { description, title } from "../data/main";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
+    <Head>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta charset="UTF-8"></meta>
+        <meta itemprop="name" content={title} />
+        <meta itemprop="description" content={description} />
+        <meta itemprop="image" content="/res/1.jpg" href="/res/1.jpg" />
+        <meta name="robots" content="index, follow"/>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Script
       id="gtm-script"
         strategy="lazyOnload"
