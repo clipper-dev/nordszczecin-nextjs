@@ -18,9 +18,9 @@ export default function Kontakt() {
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta charset="UTF-8"></meta>
-        <meta itemprop="name" content={title} />
-        <meta itemprop="description" content={description} />
-        <meta itemprop="image" content="/res/1.jpg" href="/res/1.jpg" />
+        <meta itemProp="name" content={title} />
+        <meta itemProp="description" content={description} />
+        <meta itemProp="image" content="/res/1.jpg" href="/res/1.jpg" />
         <meta name="robots" content="index, follow" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
